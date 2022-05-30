@@ -9,7 +9,7 @@
 #pragma once
 
 #ifndef __cplusplus
-	#error Randomizer.h requires C++
+	#error Randoms.h requires C++
 #endif
 
 #include <random>
