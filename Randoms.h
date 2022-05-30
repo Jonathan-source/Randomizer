@@ -1,5 +1,5 @@
 /*
-	This header file provides helpful and convenient functionality for a variety of randomness use cases.
+	This header file provides helpful and convenient functionality for generating random values.
 	This isn't a fully optimized library; rather, it's a collection of copy-paste stuff that can be utilized in other projects.
 	
 	Updated: 2022-05-25
@@ -101,7 +101,7 @@ namespace Random {
 	}
 
 	enum class EGender{ male, female, random };
-	//! [Not optimized] Provides a random name from a pool of 18´239 unique names.
+	//! [Not optimized] Provides a random name from a pool of 18Â´239 unique names.
 	std::string Name(EGender gender = EGender::random) {
 		static uint64_t seed = std::chrono::high_resolution_clock::now().time_since_epoch().count();
 		static std::seed_seq ss{ uint32_t(seed & 0xffffffff), uint32_t(seed >> 32) };
